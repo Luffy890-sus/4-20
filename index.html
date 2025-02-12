@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" href="./img.svg">
+    <title>Периводчик</title>
+</head>
+<body class="bg-[#1a202c]">
+
+    <div class="mt-[200px] w-full max-w-[1400px] m-auto">
+        <div class="flex w-full justify-around items-center mb-4">
+            <select id="srcLang" class=" bg-[#1a202c] text-[#92d1ab]"></select>
+            <button id="swapBtn" class=" text-[#92d1ab] text-[30px]">⇄</button>
+            <select id="dstLang" class="bg-[#1a202c] text-[#92d1ab]"></select>
+        </div>
+        <div class="flex items-center">
+            <div class="flex w-full gap-4 relative">
+                <textarea id="inputText" class="w-full p-3 border border-[#92d1ab] bg-[#1a202c] text-[#92d1ab] rounded h-[300px]" placeholder="Введите текст..."></textarea>
+            </div>
+                <button id="translateBtn" class="w-[100px] h-[50px] border border-[#92d1ab] rounded ml-[10px] mr-[10px] flex justify-center items-center">
+                    <svg stroke="currentColor"  stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" focusable="false" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.578a18.87 18.87 0 01-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 11-1.44 1.389c-.188-.196-.373-.396-.554-.6a19.098 19.098 0 01-3.107 3.567 1 1 0 01-1.334-1.49 17.087 17.087 0 003.13-3.733 18.992 18.992 0 01-1.487-2.494 1 1 0 111.79-.89c.234.47.489.928.764 1.372.417-.934.752-1.913.997-2.927H3a1 1 0 110-2h3V3a1 1 0 011-1zm6 6a1 1 0 01.894.553l2.991 5.982a.869.869 0 01.02.037l.99 1.98a1 1 0 11-1.79.895L15.383 16h-4.764l-.724 1.447a1 1 0 11-1.788-.894l.99-1.98.019-.038 2.99-5.982A1 1 0 0113 8zm-1.382 6h2.764L13 11.236 11.618 14z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            <div class="flex w-full mt-2">
+                <textarea id="outputText" class="w-full p-3 border border-[#92d1ab] bg-[#1a202c] text-[#92d1ab] rounded h-[300px]" readonly></textarea>
+                <button id="copyBtn" class="rounded relative left-[-45px] top-[126px]">
+                    <svg stroke="currentColor" fill="#92d1ab" stroke-width="0" viewBox="0 0 448 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/>
+                    </svg>
+                </button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

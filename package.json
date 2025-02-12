@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
+    "postcss": "^8.5.2"
+  },
+  "name": "4-20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/stail.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
