@@ -579,10 +579,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.ml-\[10px\] {
-  margin-left: 10px;
-}
-
 .mr-\[10px\] {
   margin-right: 10px;
 }
@@ -595,20 +591,8 @@ video {
   margin-top: 200px;
 }
 
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .h-24 {
@@ -772,12 +756,6 @@ a {
   }
 
   .sm\:flex {
-    display: flex;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:flex {
     display: flex;
   }
 }
